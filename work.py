@@ -1,0 +1,32 @@
+print("welcome")
+print(10*2)
+print(5+2)
+print(7)
+num1=60
+num2=10
+print(num1+num2)
+print(num1+40)  
+print(num2-30)
+print(num1*num2)
+s=30
+s=40
+print(s)
+a=10
+b=20
+c=b
+b=a
+a=c
+print(a)
+print(b)
+a,b=10,20
+b,a=a,b
+print(a)    
+print(b)
+a="python"
+print(type(a))
+b=30
+print(type(b))
+a=input()
+print(a)
+a=input("enter a number:")
+print("number is",a)
