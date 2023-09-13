@@ -1,4 +1,5 @@
 #  operations
+print(2**5)
 a=10
 a+=20
 print(a)
