@@ -1,6 +1,6 @@
 # list
-# l=[1,2,3,4.5,"abc",2,2]
-# print(l)
+l=[1,2,3,4.5,"abc",2,2]
+print(l)
 l=[1,2,3]
 l.append("abc")
 print(l)
