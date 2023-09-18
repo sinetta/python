@@ -32,7 +32,7 @@
 #     print(b,"is largest")
 
 # x=int(input("enter your age:"))
-# if (x<18):
+# if (x<=18):
 #     print("you are a minor")
 # elif (x>18 and x<65):
 #     print("you are an adult")
@@ -46,10 +46,17 @@
 # else:
 #     print(x,"is not divisible by",y)
 
-m=int(input("enter first number:"))
-n=int(input("enter second number:"))
-s=m+n
-if(s%2==0):
-    print(s,"is even")
+# m=int(input("enter first number:"))
+# n=int(input("enter second number:"))
+# s=m+n
+# if(s%2==0):
+#     print(s,"is even")
+# else:
+#     print(s,"is odd")
+
+x=input("enter a letter:")
+v=("a","e","i","o","u","A","E","I","O","U")
+if x in v:
+    print(x,"is a vowel")
 else:
-    print(s,"is odd")
+    print(x,"is a consonant")
