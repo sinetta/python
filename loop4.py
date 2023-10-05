@@ -4,14 +4,14 @@
 # print(a[1])
 
 
-# a= int(input("enter  number of elements:"))
-# b=[]
-# for i in range(a):
-#     c=int(input("enter the element:"))
-#     b.append(c)
-# b.sort()
-# print(b[-2])
-# print(b[1])
+a= int(input("enter  number of elements:"))
+b=[]
+for i in range(a):
+    c=int(input("enter the element:"))
+    b.append(c)
+b.sort()
+print(b[-2])
+print(b[1])
 
 
 # # a="lorem ipsum is a simple dummy text"

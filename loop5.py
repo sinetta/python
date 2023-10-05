@@ -43,21 +43,30 @@
 #    if a>1:
 #       print(i,a)
 
-b=0
-a="ABABABAABBAAB"
-for i in a:
-    print (i)
-    if i=="A":
-        b=b+1
-    if i=="B":
-        b=b-1
-    if b==0:
-        print("balanced")
-    else:
-        print("not balanced")
+# b=0
+# a="ABABABAABBAAB"
+# for i in a:
+#     print (i)
+#     if i=="A":
+#         b=b+1
+#     if i=="B":
+#         b=b-1
+# if b==0:
+#         print("balanced")
+# else:
+#         print("not balanced")
+  
+for i in range(5):
+    print(i*'1')
 
-    
+c=1
+for i in range(5):
+    print(c)
  
+
+
+
+
 
 
     
