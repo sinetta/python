@@ -1,3 +1,4 @@
+#1 
 # a=[2,7,6]
 # target=8
 # b=[]
@@ -24,7 +25,7 @@
 #             b.append(j)
 #             print(b)
 
-#  2
+#  9
 # num=int(input("enter the number:")) 
 # num2=num
 # a=0
@@ -37,7 +38,7 @@
 # else:
 #     print("false")
 
-#  3
+#  27
 # array=[2,4,7,2,6,3,7]
 # value=2
 # for i in array:
@@ -45,7 +46,7 @@
 #         array.remove(i)
 # print(len(array))
 
-# 4
+# 21
 # num1=[2,4,5,6]
 # num2=[1,3,6,7]
 # num=num1+num2
@@ -60,16 +61,61 @@
 # b.sort()
 # print(b)
 
-# 6
+# 58
 # str="hello everyone"
 # str1=str.split()
 # str2=str1[-1]
 # print(len(str2))
 
 # 7
-list=[5,6,7,8]
-a=list[::-1]
-print(a)
+# list=[5,6,7,8]
+# a=list[::-1]
+# print(a)
+
+# 26
+# num=[1,3,4,5,3]
+# num1=set(num)
+# if num==num1:
+#     print("false")
+# else:
+#     print("true")
+
+# 14
+# str=["sunlight","sunshine","sunrise"]
+
+# 434
+# str="hello, my name is Anu"
+# str1=str.split()
+# print(len(str1))
+
+# 392
+# str1="aeg"
+# val="bcegra"
+# for i in str1:
+#    a=0
+# if i in str1:
+#     print("true")
+# else:
+#     print("false")
+
+# 414 
+# num=[2,4]
+# num.sort()
+# num1=num[-1]
+# print("first distinct maximum is:",num1)
+# num2=num[-2]
+# print("second distinct maximum is",num2)
+# if len(num)==2:
+#     print("max=",num[-1])
+# else:
+#     num3=num[-3]
+#     print("third distinct maximum is",num3)
+            
+# 415
+str1="14"
+str2="132"
+str3=list(str1)
+print(str3)
 
 
 
