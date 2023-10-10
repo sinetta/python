@@ -105,18 +105,78 @@
 # print("first distinct maximum is:",num1)
 # num2=num[-2]
 # print("second distinct maximum is",num2)
-# if len(num)==2:
+# if len(num)<=2:
 #     print("max=",num[-1])
 # else:
 #     num3=num[-3]
 #     print("third distinct maximum is",num3)
             
 # 415
-str1="14"
-str2="132"
-str3=list(str1)
-print(str3)
+# str1="14"
+# str2="132"
+# num1=str1.split()
+# num2=str2.split()
+# s=len(num1)
+# t=len(num2)
+# str3=0
+# str4=0
+# for i in range(s):
+#     a=int(num1[i])
+#     str3=str3*10+a
+# for j in range(t):
+#     b=int(num2[j])
+#     str4=str4*10+b
+# sum=str3+str4
+# print(sum)
+
+# 231
+# num=int(input("enter a number:"))
+# while(num%2==0):
+#     num=num/2
+# if num==1:
+#     print("true")
+# else:
+#     print("false")
+
+# 342
+# num=int(input("enter a number:"))
+# while(num%4==0):
+#     num=num/4
+# if num==1:
+#     print("true")
+# else:
+#     print("false")
 
 
+# 326
+# num=int(input("enter a number:"))
+# while(num%3==0):
+#     num=num/3
+# if num==1:
+#     print("true")
+# else:
+#     print("false")
 
+# 2235
+# num1=int(input("enter a number:"))
+# num2=int(input("enter a number:"))
+# sum=num1+num2
+# print(sum)
+
+# 2733
+# num=[2,1]
+# num.sort()
+# if len(num)<=2:
+#     print(-1)
+# else:
+#     num1=num[1]
+#     print(num1)
+
+# 169
+num=["a","b","d","a","a"]
+n=len(num)
+for i in num:
+    l=len(i)
+if l>n/2:
+    print("majority element is",i)
 
