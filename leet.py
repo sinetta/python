@@ -173,10 +173,42 @@
 #     print(num1)
 
 # 169
-num=["a","b","d","a","a"]
-n=len(num)
-for i in num:
-    l=len(i)
-if l>n/2:
-    print("majority element is",i)
+# num=[1,2,2,3,4,1,2,1,1,2,2,2,2,2]
+# n=len(num)
+# for i in range(n):
+#     if num.count(i)>n/2:
+#         print("the majority element is:",i)
+
+# 2032
+num1=[1,2,3]
+num2=[2,3,4]
+num3=[3]
+num=[]
+for i in num1:
+    for j in num2:
+        if i==j:
+            num.append(i)
+        elif j==i:
+            num.append(j)
+        for k in num3:
+            if i==k or j==k:
+                num.append(k)
+a=set(num)
+b=list(a)
+print(b)
+
+
+# 344
+# str=["H","e","l","l","o"]
+# str1=str[::-1]
+# print(str1)
+
+# 345
+str1="round"
+str2=["a","e","i","o","u","A","E","I","O","U"]
+for i in str1:
+    print(i)
+
+
+
 
