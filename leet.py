@@ -53,7 +53,7 @@
 # num=sorted(num)
 # print(num)
 
-# 5
+# 26
 # num=[1,2,6,6,8,8]
 # a=set(num)
 # b=list(a)
@@ -67,12 +67,12 @@
 # str2=str1[-1]
 # print(len(str2))
 
-# 7
+# 206
 # list=[5,6,7,8]
 # a=list[::-1]
 # print(a)
 
-# 26
+# 217
 # num=[1,3,4,5,3]
 # num1=set(num)
 # if num==num1:
@@ -91,9 +91,9 @@
 # 392
 # str1="aeg"
 # val="bcegra"
-# for i in str1:
+# for i in val:
 #    a=0
-# if i in str1:
+# if i in val:
 #     print("true")
 # else:
 #     print("false")
@@ -180,22 +180,22 @@
 #         print("the majority element is:",i)
 
 # 2032
-num1=[1,2,3]
-num2=[2,3,4]
-num3=[3]
-num=[]
-for i in num1:
-    for j in num2:
-        if i==j:
-            num.append(i)
-        elif j==i:
-            num.append(j)
-        for k in num3:
-            if i==k or j==k:
-                num.append(k)
-a=set(num)
-b=list(a)
-print(b)
+# num1=[1,2,3]
+# num2=[2,3,4]
+# num3=[3]
+# num=[]
+# for i in num1:
+#     for j in num2:
+#         if i==j:
+#             num.append(i)
+#         elif j==i:
+#             num.append(j)
+#         for k in num3:
+#             if i==k or j==k:
+#                 num.append(k)
+# a=set(num)
+# b=list(a)
+# print(b)
 
 
 # 344
@@ -204,11 +204,47 @@ print(b)
 # print(str1)
 
 # 345
-str1="round"
-str2=["a","e","i","o","u","A","E","I","O","U"]
-for i in str1:
-    print(i)
+# str1="round"
+# str2=["a","e","i","o","u","A","E","I","O","U"]
+
+# 136
+# array=[1,1,2,3,3,4,4]
+# for i in array:
+#     if array.count(i)==1:
+#         print("single element:",i)
+
+# 374
+# secret_number=79
+# guess=int(input("enter a number between 1-100:"))
+# if guess>secret_number:
+#     print("too high")
+# elif guess<secret_number:
+#     print("too low")
+# else:
+#     print("correct")
+
+# 283
+# nums=[1,2,0,3,0,4]
+# for i in nums:
+#     if i==0:
+#         nums.remove(i)
+#         nums.append(i)
+# print(nums)
 
 
 
 
+
+
+
+
+def moveZeroes(nums):
+      te=nums.copy()
+      for i in nums:
+         if i==0:
+           te.remove(i)
+           te.append(i)
+        #    print(te.append(i))
+      print(te)
+         
+moveZeroes([1,2,0,3,0,4])
