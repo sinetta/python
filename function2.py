@@ -25,10 +25,10 @@ while True:
         # print(new)
         
         for i in new:
-            print('='*10)
+            print('-'*15)
             for key , value in i.items():
                 print(key,':',value)
-            print('='*10)
+            print('-'*15)
     elif opt==3:
         acc_no=int(input("enter the acc_no:"))
         amount=int(input("enter the amount:"))

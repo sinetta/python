@@ -8,7 +8,7 @@ while choice=='y':
     2)display  
     3)add balance     
     4)withdraw
-    4)quit
+    5)quit
           ''')
     option=int(input("enter your choice:"))
     if option==1:
@@ -28,11 +28,36 @@ while choice=='y':
     elif option==2:
         print(bank)
     elif option==3:
-        acc_no=int(input("enter the account number:"))
-        a=int(input("enter the amount to add:"))
+        acc_no=int(input("enter the acc_no:"))
+        amount=int(input("enter the amount:"))
+        acc=[]
         for i in bank:
-            if i==acc_no:
-              new_customer["balance"]=balance+a
+            acc.append(i["account_no"])
+        print(acc)
+        if acc_no in acc:
+            for i in bank:
+               if i["account_no"]==acc_no:
+                   i["balance"]+=amount
+        else:
+            print("no account found")
+    elif option==4:
+        acc_no=int(input("enter the acc_no:"))
+        amount=int(input("enter the amount:"))
+        acc=[]
+        for i in bank:
+            acc.append(i["account_no"])
+        print(acc)
+        if acc_no in acc:
+            for i in bank:
+               if i["account_no"]==acc_no:
+                    if i["balance"]>=amount:
+                       i["balance"]-=amount
+                    else:
+                        print("not possible")
+        else:
+            print("no account found")
+    elif option==5:
+        exit()
 
     
 
