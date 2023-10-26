@@ -8,6 +8,8 @@ while True:
     2)view details
     3)enter detaiils of teacher
     4)assign
+    5)fees     
+    6)quit
     ''')
     choice=int(input("enter your choice:"))
     if choice==1:
@@ -26,12 +28,50 @@ while True:
         name=input("enter the name:")
         teacher.append(name)
     elif choice==4:
-        std_no=int(input("enter the class:"))
+        st_class=int(input("enter the class:"))
         for i in details:
             students.append(i["class"])
-        if std_no in students:
+            if st_class in students:
+                for i in details:
+                    if i["class"]==st_class:
+                        i["teacher"]=teacher[0]
+                    else:
+                        i["teacher"]=teacher[1]
+        print(details)
+    elif choice==5:
+        st_name=input("enter the name:")
+        cls=int(input("enter the class:"))
+        for i in details:
+            students.append(i["name"])
+        amount=int(input("enter the amount:"))
+        if st_name and cls in students:
             for i in details:
-                if i["class"]==std_no:
+                if st_name==i["name"] and cls==i["class"]:
+                    i["fees"]=amount
+            print(details)
+    
+
+        
+        
+
+        
+            
+
+        
+        
+        
+
+        
+        
+
+
+        
+        
+                    
+            
+
+
+
                     
 
 

@@ -230,21 +230,14 @@
 #         nums.remove(i)
 #         nums.append(i)
 # print(nums)
-
-
-
-
-
-
-
-
-def moveZeroes(nums):
-      te=nums.copy()
-      for i in nums:
-         if i==0:
-           te.remove(i)
-           te.append(i)
-        #    print(te.append(i))
-      print(te)
+# def moveZeroes(nums):
+#       te=nums.copy()
+#       for i in nums:
+#          if i==0:
+#            te.remove(i)
+#            te.append(i)
+#         #    print(te.append(i))
+#       print(te)
          
-moveZeroes([1,2,0,3,0,4])
+# moveZeroes([1,2,0,3,0,4])
+

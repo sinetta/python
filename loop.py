@@ -7,6 +7,11 @@
 # for i in range(1,11):
 #      print(i,'x',b,'=',i*b)
 
-a=int(input())
-for i in range(a+1):
-    print(i*'*')
+# a=int(input())
+# for i in range(a+1):
+#     print(i*'*')
+
+for x in range(6):
+    for y in range(x):
+        print("*",end="")
+    print("")    
