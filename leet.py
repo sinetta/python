@@ -241,3 +241,11 @@
          
 # moveZeroes([1,2,0,3,0,4])
 
+# 268
+num=[3,0,2,5,1,6,9]
+for i in range(0,9):
+    if i not in num:
+        print(i)
+
+# 17
+
