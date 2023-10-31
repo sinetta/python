@@ -242,10 +242,39 @@
 # moveZeroes([1,2,0,3,0,4])
 
 # 268
-num=[3,0,2,5,1,6,9]
-for i in range(0,9):
-    if i not in num:
-        print(i)
+# num=[3,0,2,5,1,6,9]
+# for i in range(0,9):
+#     if i not in num:
+#         print(i)
 
 # 17
-
+letter={0:"#",1:"$",2:"abc",3:"def",4:"ghi",5:"jkl",6:"mno",7:"pqrs",8:"tuv",9:"wxyz"}
+phn=int(input("enter the number:"))
+if phn<=9:
+    num=letter[phn]
+    for i in num:
+        print(i)
+elif phn>9 and phn<100:
+    a=phn//10
+    b=phn%10
+    num=letter[a]
+    num1=letter[b]
+    for i in num:
+        for j in num1:
+            combinations=i+j
+            print(combinations)
+        print("")
+else:
+    c=phn//100
+    d=phn%100
+    e=d//10 
+    f=d%10
+    num2=letter[c]
+    num3=letter[e]
+    num4=letter[f]
+    for i in num2:
+        for j in num3:
+            for k in num4:
+                combinations=i+j+k
+                print(combinations)
+            print("")
