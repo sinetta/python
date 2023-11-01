@@ -248,33 +248,64 @@
 #         print(i)
 
 # 17
-letter={0:"#",1:"$",2:"abc",3:"def",4:"ghi",5:"jkl",6:"mno",7:"pqrs",8:"tuv",9:"wxyz"}
-phn=int(input("enter the number:"))
-if phn<=9:
-    num=letter[phn]
-    for i in num:
-        print(i)
-elif phn>9 and phn<100:
-    a=phn//10
-    b=phn%10
-    num=letter[a]
-    num1=letter[b]
-    for i in num:
-        for j in num1:
-            combinations=i+j
-            print(combinations)
-        print("")
-else:
-    c=phn//100
-    d=phn%100
-    e=d//10 
-    f=d%10
-    num2=letter[c]
-    num3=letter[e]
-    num4=letter[f]
-    for i in num2:
-        for j in num3:
-            for k in num4:
-                combinations=i+j+k
-                print(combinations)
-            print("")
+# letter={0:"#",1:"$",2:"abc",3:"def",4:"ghi",5:"jkl",6:"mno",7:"pqrs",8:"tuv",9:"wxyz"}
+# phn=int(input("enter the number:"))
+# if phn<=9:
+#     num=letter[phn]
+#     for i in num:
+#         print(i)
+# elif phn>9 and phn<100:
+#     a=phn//10
+#     b=phn%10
+#     num=letter[a]
+#     num1=letter[b]
+#     for i in num:
+#         for j in num1:
+#             combinations=i+j
+#             print(combinations)
+#         print("")
+# else:
+#     c=phn//100
+#     d=phn%100
+#     e=d//10 
+#     f=d%10
+#     num2=letter[c]
+#     num3=letter[e]
+#     num4=letter[f]
+#     for i in num2:
+#         for j in num3:
+#             for k in num4:
+#                 combinations=i+j+k
+#                 print(combinations)
+#             print("")
+
+# 371
+
+# num1=int(input("enter first number:"))
+# num2=int(input("enter second number:"))
+# addition=sum((num1,num2))
+# print(addition)
+
+# # 34
+# array=[3,4,5,5,6,7,8]
+# target=5
+# a=len(array)
+# b=[]
+# if target in array:
+#     for i in range(a):
+#         if array[i]==target:
+#             b.append(i)
+#             print(b)
+# else:
+#     print(-1,-1)
+
+# 29
+# num1=int(input("enter first number:"))
+# num2=int(input("enter second number:"))
+# num3=num1//num2
+# print(num3)
+
+# 43
+num1=input("enter a number")
+num2=input("enter a number:")
+
