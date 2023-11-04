@@ -4,3 +4,5 @@ for i in list:
     dict.update({"teacher":i})
 print(dict)
 
+
+

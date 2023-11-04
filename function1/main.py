@@ -1,5 +1,4 @@
 from master import *
-
 while True:
     print('''
     1)create account
@@ -9,7 +8,7 @@ while True:
     5)quit   ''')
     opt=int(input("enter your choice:"))
     if opt==1:
-       application(bank,balance,new,account_no)
+       application(bank,new,account_no,balance)
     elif opt==2:
         account(new)
     elif opt==3:
