@@ -8,7 +8,8 @@ while True:
     5)quit   ''')
     opt=int(input("enter your choice:"))
     if opt==1:
-       application(bank,new,account_no,balance)
+       application(account_no)
+       account_no+=1
     elif opt==2:
         account(new)
     elif opt==3:

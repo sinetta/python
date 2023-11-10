@@ -1,19 +1,26 @@
 bank={}
 new=[]
+
 account_no=1000
 balance=0
 acc=[]
-def application(bank,new,account_no,balance):
+def application(account_no):
     name=input("enter your name:")
     bank["name"]=name
     age=int(input("enter your age:"))
     bank["age"]=age
     contact_no=int(input("enter your contact:"))
     bank["contact_no"]=contact_no
+    
     bank["account_no"]=account_no
+    
     bank["balance"]=balance
-    account_no+=1
     new.append(bank.copy())
+    print(account_no)
+
+    
+    
+    
 def account(new):
     for i in new:
             print('-'*15)
