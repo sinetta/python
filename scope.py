@@ -21,3 +21,4 @@ global_scope()
 scope()
 print(x)
 local_scope()
+
