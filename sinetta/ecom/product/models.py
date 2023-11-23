@@ -7,3 +7,4 @@ class Product(models.Model):
     price=models.CharField(max_length=255)
     brand=models.CharField(max_length=255)
     image=models.CharField(max_length=3000)
+    
