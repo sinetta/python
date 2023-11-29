@@ -13,6 +13,11 @@ def index(request):
             todo_form=Todo_form(request.POST) 
             todo_form.save()
 
+        elif 'delete' in request.POST:
+           key=request.POST.get('delete')
+           todo_del=Todo.objects.get(id=key)
+           todo_del.delete()
+
     context['todo_form']=todo_form
     context['todo']=todo
     return render(request,'index.html',context)

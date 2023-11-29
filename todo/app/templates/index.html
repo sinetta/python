@@ -9,14 +9,19 @@
 
 </form>
 
+<form method="POST">
+    {%csrf_token%}
+
+
 {%for i in todo%}
 
 
-<li>{{i.task}}</li>
+<li>{{i.task}}</li> <button>edit</button> <button formnovalidate name="delete" value="{{i.id}}">delete</button>
 
 
 
 {%endfor%}
+</form>
 
 
 
