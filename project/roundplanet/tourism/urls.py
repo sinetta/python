@@ -7,8 +7,11 @@ urlpatterns = [
     
     path('',views.index,name='index'),
     path('about',views.about,name='about'),
-    path('packages',views.packages,name='packages')
-
+    path('packages',views.packages,name='packages'),
+    path('news',views.news,name='news'),
+    path('gallery',views.gallery,name='gallery'),
+    path('contact',views.contact,name='contact')
+   
 ]
 urlpatterns += static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
 

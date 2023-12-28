@@ -37,7 +37,7 @@
         
         <div class="row bg-white">
             <div class="col-lg-5 col-md-5 col-sm-5">
-                <a href="{% url 'index' %}"><img src="../images/logo.png" alt="" class="logo"></a>
+                <a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt="" class="logo"></a>
             </div>
             <div class="col-lg col-md col-sm mt-4 mb-3">
               <nav class="navbar navbar-expand-lg navbar-light">
@@ -86,123 +86,33 @@
 
     <div class="container">
         <div class="row pt-5 pb-5">
-             {}
+          {%for i in obj%}
               <div class="col-lg-4 col-md-4 col-sm-4 " > 
+               
                 <a  href=""  class="tour-package-item tour-location-item"> 
                 <div class="wrapper">
                 
-                <img class="w-100 overla "  src="./images/singapore.avif" alt="">
+                <img class="w-100 overla "  src="{{i.image.url}}" alt="{{i.image}}">
                 <div class="overlaying">
                   <i class="fa fa-link text " aria-hidden="true" style="font-size:30px;"></i>
                   
                 </div>
               </div>
             <div class="box">
-                 <h5 class="text-center">Singapore</h5>
+                 <h5 class="text-center">{{i.name}}</h5>
                  
             </div>
           </a>
          
+
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 " > 
-                <a  href=""  class="tour-package-item tour-location-item"> 
-                <div class="wrapper">
-                
-                <img class="w-100 overla "  src="./images/switzerland.jpg" alt="">
-                <div class="overlaying">
-                  <i class="fa fa-link text " aria-hidden="true" style="font-size:30px;"></i>
-                  
-                </div>
-              </div>
-            <div class="box">
-                 <h5 class="text-center">Switzerland</h5>
-                 
-            </div>
-          </a>
+            {% endfor %}
          
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 " > 
-                <a  href=""  class="tour-package-item tour-location-item"> 
-                <div class="wrapper">
-                
-                <img class="w-100 overla "  src="./images/indonesia.jpg" alt="">
-                <div class="overlaying">
-                  <i class="fa fa-link text " aria-hidden="true" style="font-size:30px;"></i>
-                  
-                </div>
-              </div>
-            <div class="box">
-                 <h5 class="text-center">Indonesia</h5>
-                 
-            </div>
-          </a>
-         
-            </div>
-       
-           
-       
+    </div>
   
-  </div>
-  
-  <div class="row pt-2 pb-2">
-    <div class="col-lg-4 col-md-4 col-sm-4 " > 
-      <a  href=""  class="tour-package-item tour-location-item"> 
-      <div class="wrapper">
-      
-      <img class="w-100 overla "  src="images/pta.webp" alt="">
-      <div class="overlaying">
-        <i class="fa fa-link text " aria-hidden="true" style="font-size:30px;"></i>
-        
-      </div>
-    </div>
-  <div class="box">
-       <h5 class="text-center">Pathanamthitta</h5>
-       
-  </div>
-</a>
-
-  </div>
-  <div class="col-lg-4 col-md-4 col-sm-4 " > 
-      <a  href=""  class="tour-package-item tour-location-item"> 
-      <div class="wrapper">
-      
-      <img class="w-100 overla "  src="./images/ernakulam.webp" alt="">
-      <div class="overlaying">
-        <i class="fa fa-link text " aria-hidden="true" style="font-size:30px;"></i>
-        
-      </div>
-    </div>
-  <div class="box">
-       <h5 class="text-center">Ernakulam</h5>
-       
-  </div>
-</a>
-
-  </div>
-  <div class="col-lg-4 col-md-4 col-sm-4 " > 
-      <a  href=""  class="tour-package-item tour-location-item"> 
-      <div class="wrapper">
-      
-      <img class="w-100 overla "  src="./images/thrissur.webp" alt="">
-      <div class="overlaying">
-        <i class="fa fa-link text " aria-hidden="true" style="font-size:30px;"></i>
-        
-      </div>
-    </div>
-  <div class="box">
-       <h5 class="text-center">Thrissur</h5>
-       
-  </div>
-</a>
-
-  </div>
-
- 
-
-
-</div>
+ </div>
             
-    </div>
+ 
 
 
 
@@ -211,19 +121,19 @@
     <div class="container">
         <div class="row rtwo">
             <div class="col-lg-1 col-md-1 col-sm-1">
-               <img src="./images/icon1.png" alt="" class="imageicon">
+               <img src="{% static 'images/icon1.png' %}" alt="" class="imageicon">
             </div>
             <div class="col-lg col-md col-sm mt-3 ms-3 text-light">
                 <h5>Download Our Informative Brochure</h5>
                 <p>Get all the details you need about our offerings in one convenient brochure.</p>
             </div>
             <div class="col-lg-2 col-md-2 col-sm-2 mt-3">
-                <a href="" class="href1"><img src="./images/icon-download.png" alt="" class="icon-download"><span class="ms-3 text-light">Download</span></a>
+                <a href="" class="href1"><img src="{% static 'images/icon-download.png' %}" alt="" class="icon-download"><span class="ms-3 text-light">Download</span></a>
             </div>
         </div>
         <div class="row mt-5 mb-5">
             <div class="col-lg col-md col-sm mt-5">
-                <img src="./images/logo1.png" alt="" class="w-30">
+                <img src="{% static 'images/logo1.png' %}" alt="" class="w-30">
             </div>
             <div class="col-lg col-md col-sm mt-5">
                 <h4 class="text-light">Quick Links</h4>
@@ -261,11 +171,11 @@
                     <a href="" class="href2">info@rounddplanet.com</a>
                 </p>
                 <div class="col-lg col-md col-sm">
-                    <a href=""><img src="./images/icon-facebook.png" alt="" class="icons1"></a>
-                    <a href=""><img src="./images/icon-twitter.png" alt="" class="icons2 ms-2"></a>
-                    <a href=""><img src="./images/icon-linkedin.png" alt="" class="icons3 ms-2"></a>
-                    <a href=""><img src="./images/icon-instagram.png" alt="" class="icons4 ms-2"></a>
-                    <a href=""><img src="./images/icons-youtube.png" alt="" class="icons5 ms-2"></a>
+                  <a href=""><img src="{% static 'images/icon-facebook.png' %}" alt="" class="icons1"></a>
+                  <a href=""><img src="{% static 'images/icon-twitter.png' %}" alt="" class="icons2 ms-2"></a>
+                  <a href=""><img src="{% static 'images/icon-linkedin.png' %}" alt="" class="icons3 ms-2"></a>
+                  <a href=""><img src="{% static 'images/icon-instagram.png' %}" alt="" class="icons4 ms-2"></a>
+                  <a href=""><img src="{% static 'images/icons-youtube.png' %}" alt="" class="icons5 ms-2"></a>
                 </div>
             </div>
         </div>
