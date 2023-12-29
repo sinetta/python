@@ -11,7 +11,7 @@ class Contact(models.Model):
 class Package(models.Model):
     name=models.CharField(max_length=255)
     image = models.ImageField(upload_to='img')
-
+   
 class Event(models.Model):
     image=models.ImageField(upload_to='img')
     description=models.CharField(max_length=255)
@@ -25,3 +25,9 @@ class Contactus(models.Model):
     phone=models.CharField(max_length=10)
     message=models.TextField()
     subject=models.CharField(max_length=255)
+
+class Subpack(models.Model):
+    image = models.ImageField(upload_to='img')
+    price=models.CharField(max_length=50)
+    day=models.CharField(max_length=10)
+    night=models.CharField(max_length=10)

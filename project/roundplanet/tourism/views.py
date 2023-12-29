@@ -5,7 +5,7 @@ from .models import *
 def index(request):
     
     context={}
-    con=Contact.objects.all()
+    con=Package.objects.all()
     context["con"]=con
     if request.method=='POST':
         name=request.POST.get('name')
@@ -17,6 +17,8 @@ def index(request):
             details=Contact.objects.create(name=name,email=email,phone=phone,message=message)
             details.save()
             return redirect('index')
+        
+    
 
     
 
@@ -62,5 +64,15 @@ def contact(request):
             return redirect('index')
         
     return render(request,'contact.html',context)
+
+def subpack(request):
+    context={}
+    sp=Subpack.objects.all()
+    context['sp']=sp
+    return render(request,'subpack.html',context)
+
+
+def test(request):
+    return render(request,'testimonials.html')
 
 
