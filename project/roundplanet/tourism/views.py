@@ -34,6 +34,8 @@ def packages(request):
     context['obj']=obj
     return render(request,'packages.html',context)
 
+    
+
 def news(request):
     context={}
     eve=Event.objects.all()
@@ -65,9 +67,14 @@ def contact(request):
         
     return render(request,'contact.html',context)
 
-def subpack(request):
+def Subpackages(request):
     context={}
-    sp=Subpack.objects.all()
+    pkg=request.GET.get('pack')
+    print(pkg)
+    sp=Package.objects.all()
+    sub=Subpackage.objects.filter(pack=pkg)
+
+    context['sub']=sub
     context['sp']=sp
     return render(request,'subpack.html',context)
 

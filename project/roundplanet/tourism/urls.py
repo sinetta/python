@@ -11,7 +11,7 @@ urlpatterns = [
     path('news',views.news,name='news'),
     path('gallery',views.gallery,name='gallery'),
     path('contact',views.contact,name='contact'),
-    path('subpack',views.subpack,name='subpack'),
+    path('subpack',views.Subpackages,name='subpack'),
     path('testimonials',views.test,name='testimonials'),
    
 ]
