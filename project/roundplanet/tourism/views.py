@@ -1,4 +1,5 @@
 from django.shortcuts import render,redirect
+from django.http import HttpResponse
 from .models import *
 # Create your views here.
 
@@ -27,14 +28,21 @@ def index(request):
 def about(request):
     return render(request,'about.html')
 
+
+# def packages(request):
+#     return HttpResponse('<h1> packages</h1>')
+
 def packages(request):
 
     context={}
     obj=Package.objects.all()
+    # sub=Subpackage.objects.filter(pack=key)
     context['obj']=obj
+    # context['sub']=sub
     return render(request,'packages.html',context)
 
     
+
 
 def news(request):
     context={}
@@ -67,12 +75,12 @@ def contact(request):
         
     return render(request,'contact.html',context)
 
-def Subpackages(request):
+def Subpackages(request,key):
     context={}
-    pkg=request.GET.get('pack')
-    print(pkg)
+    # pkg=request.GET.get('pack')
+    # print(pkg)
     sp=Package.objects.all()
-    sub=Subpackage.objects.filter(pack=pkg)
+    sub=Subpackage.objects.get(id=key)
 
     context['sub']=sub
     context['sp']=sp

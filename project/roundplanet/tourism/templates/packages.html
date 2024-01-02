@@ -54,7 +54,7 @@
                         <a class="nav-link l2" aria-current="page" href="about">ABOUT US</a>
                       </li>
                       <li> 
-                        <a class="nav-link  ms-4" aria-current="page" href="#">PACKAGES</a>
+                        <a class="nav-link  ms-4" aria-current="page" href="packages">PACKAGES</a>
                       </li>
                       <li>
                         <a class="nav-link l2 ms-4" aria-current="page" href="news">NEWS & EVENTS</a>
@@ -90,10 +90,10 @@
           {%for i in obj%}
               <div class="col-lg-4 col-md-4 col-sm-4 " > 
                
-                <a  href="{% url 'subpack' %}"  class="tour-package-item tour-location-item"> 
+                <a  href=""  class="tour-package-item tour-location-item"> 
                 <div class="wrapper">
                 
-                <img class="w-100 overla "  src="{{i.image.url}}" alt="{{i.image}}">
+                <a href="{% url 'subpack' %}"><img class="w-100 overla "  src="{{i.image.url}}" alt="{{i.image}}"></a>
                 <div class="overlaying">
                   <i class="fa fa-link text " aria-hidden="true" style="font-size:30px;"></i>
                   
