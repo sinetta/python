@@ -29,16 +29,11 @@ def about(request):
     return render(request,'about.html')
 
 
-# def packages(request):
-#     return HttpResponse('<h1> packages</h1>')
-
 def packages(request):
 
     context={}
     obj=Package.objects.all()
-    # sub=Subpackage.objects.filter(pack=key)
     context['obj']=obj
-    # context['sub']=sub
     return render(request,'packages.html',context)
 
     
@@ -75,13 +70,11 @@ def contact(request):
         
     return render(request,'contact.html',context)
 
-def Subpackages(request,key):
+def Subpackages(request,id):
+    
     context={}
-    # pkg=request.GET.get('pack')
-    # print(pkg)
     sp=Package.objects.all()
-    sub=Subpackage.objects.get(id=key)
-
+    sub=Subpackage.objects.all().filter(id=id)
     context['sub']=sub
     context['sp']=sp
     return render(request,'subpack.html',context)
@@ -90,4 +83,9 @@ def Subpackages(request,key):
 def test(request):
     return render(request,'testimonials.html')
 
+def event(request,):
+    context={}
+    eve=Event_news.objects.all()
+    context['eve']=eve
+    return render(request,'event.html',context)
 

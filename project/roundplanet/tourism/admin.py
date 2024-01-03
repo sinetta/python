@@ -20,9 +20,14 @@ class Contactus_display(admin.ModelAdmin):
 class Sub(admin.ModelAdmin):
     list_display=['image','price','day','night','pack']
 
+class Event1(admin.ModelAdmin):
+    list_display=['image','event']
+
+
 admin.site.register(Contact,Enquiry)
 admin.site.register(Package,Pack)
 admin.site.register(Event,Event_details)
 admin.site.register(Gal,Gal_display)
 admin.site.register(Contactus,Contactus_display)
 admin.site.register(Subpackage,Sub)
+admin.site.register(Event_news,Event1)

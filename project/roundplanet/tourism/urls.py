@@ -11,8 +11,9 @@ urlpatterns = [
     path('news',views.news,name='news'),
     path('gallery',views.gallery,name='gallery'),
     path('contact',views.contact,name='contact'),
-    path('subpack',views.Subpackages,name='subpack'),
+    path('subpack/<int:id>/',views.Subpackages,name='subpack'),
     path('testimonials',views.test,name='testimonials'),
+    path('event',views.event,name='event'),
    
 ]
 urlpatterns += static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)

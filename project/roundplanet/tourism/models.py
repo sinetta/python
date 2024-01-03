@@ -36,3 +36,7 @@ class Subpackage(models.Model):
     night=models.CharField(max_length=10)
     pack=models.ForeignKey(Package,on_delete=models.CASCADE)
     
+class Event_news(models.Model):
+    image=models.ImageField(upload_to='img')
+    event=models.ForeignKey(Event,on_delete=models.CASCADE)
+    

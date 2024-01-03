@@ -87,23 +87,22 @@
 
     <div class="container">
         <div class="row pt-5 pb-5">
-          {%for i in obj%}
+          {%for i in obj %}
               <div class="col-lg-4 col-md-4 col-sm-4 " > 
-               
                 <a  href=""  class="tour-package-item tour-location-item"> 
-                <div class="wrapper">
-                
-                <a href="{% url 'subpack' %}"><img class="w-100 overla "  src="{{i.image.url}}" alt="{{i.image}}"></a>
-                <div class="overlaying">
-                  <i class="fa fa-link text " aria-hidden="true" style="font-size:30px;"></i>
-                  
-                </div>
-              </div>
-              <div class="box">
-                 <h5 class="text-center">{{i.name}}</h5>
-                 
-              </div>
-          </a>
+                  <div class="wrapper">
+               
+                    <a href="{% url 'subpack' i.id %}"> <img class="w-100 overla "  src="{{i.image.url}}" alt="{{i.image}}">
+                     <div class="overlaying">
+                        <i class="fa fa-link text " aria-hidden="true" style="font-size:30px;"></i>
+                     </div>
+                   </a>
+                 </div>
+                 <div class="box">
+                   <h5 class="text-center">{{i.name}}</h5>
+                 </div>
+               </a>
+               
          
 
             </div>

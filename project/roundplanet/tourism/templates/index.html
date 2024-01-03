@@ -104,13 +104,14 @@
           {% for i in con %}
               <div class="col-lg-4 col-md-4 col-sm-4 " > 
                
-                <a  href=""  class="tour-package-item tour-location-item"> 
+                <a  href="{% url 'subpack' i.id%}"  class="tour-package-item tour-location-item"> 
                    <div class="wrapper">
                 
                       <img class="w-100 overla "  src="{{i.image.url}}" alt="{{i.image}}">
                       <div class="overlaying">
                          <i class="fa fa-link text " aria-hidden="true" style="font-size:30px;"></i>
                       </div>
+                    </a>
                   </div>
                   <div class="box">
                     <h5 class="text-center">{{i.name}}</h5>
@@ -215,7 +216,7 @@
                             </div>
                             <div class="row rone">
                                 <div class="col-lg-3  mt-2">
-                                    <a href=""><img src="{% static 'images/image1.jpg' %}" alt="" class="i7"></a>
+                                <a href="{% url 'testimonials' %}">  <img src="{% static 'images/image1.jpg' %}" alt="" class="i7"></a>
                                 </div>
                                 <div class="col-lg-9 mt-2">
                                     <h5>Jane Doe </h5>
