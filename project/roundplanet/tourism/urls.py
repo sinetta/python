@@ -13,7 +13,8 @@ urlpatterns = [
     path('contact',views.contact,name='contact'),
     path('subpack/<int:id>/',views.Subpackages,name='subpack'),
     path('testimonials',views.test,name='testimonials'),
-    path('event',views.event,name='event'),
+    path('event/<int:id>/',views.event,name='event'),
+    path('subpack1',views.subpack,name='subpack1'),
    
 ]
 urlpatterns += static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)

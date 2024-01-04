@@ -83,9 +83,13 @@ def Subpackages(request,id):
 def test(request):
     return render(request,'testimonials.html')
 
-def event(request,):
+def event(request,id):
     context={}
-    eve=Event_news.objects.all()
+    eve=Event.objects.all()
+    sp=Event_news.objects.all().filter(id=id)
     context['eve']=eve
+    context['sp']=sp
     return render(request,'event.html',context)
 
+def subpack(request):
+    return render(request,'subpack1.html')

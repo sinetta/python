@@ -7,6 +7,10 @@ font-family: 'Playfair Display SC', serif;
 font-family: 'Roboto', sans-serif; */
 
 /* section1 */
+
+body{
+    overflow-x: hidden;
+}
 .r1{
     background-color: rgb(42, 124, 206);
     position: relative;
@@ -22,7 +26,7 @@ a.a1{
 /* section2 */
 .logo{
     left:20em;
-    top:-18px;
+    top:25px;
     z-index: 100;
     position: absolute;
     background-color: white;

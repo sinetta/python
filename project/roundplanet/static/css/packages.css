@@ -22,7 +22,7 @@ a.a1{
 /* section2 */
 .logo{
     left:20em;
-    top:-18px;
+    top:25px;
     z-index: 100;
     position: absolute;
     background-color: white;
@@ -189,5 +189,90 @@ a.l3:hover{
       text-decoration: none;
       color: black;
   }
+
+
+  /* section5 */
+
+  .footer{
+    background-image: url(../images/background2.jpg);
+    background-size: cover;
+    height: 590px;
+}
+.rtwo{
+    background-color:  rgb(42, 124, 206) ;
+    padding: 20px;
+}
+.imageicon{
+    width: 90px;
+    height: 90px;
+}
+.icon-download{
+    width: 20px;
+}
+.href1{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+.ul{
+    list-style: none;
+    font-size: 14px;
+    line-height: 30px;
+}
+.li{
+    text-decoration: none;
+    color: rgb(175, 172, 172);
+}
+.li:hover{
+    color: white;
+}
+.para2{
+    color: rgb(175, 172, 172);
+    font-size: 14px;
+    line-height: 20px;
+}
+a.href2{
+    color: rgb(175, 172, 172);
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+}
+.icons1{
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(67, 67, 194);
+    padding: 10px;
+}
+.icons2{
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(18, 195, 248);
+    padding: 10px;
+}
+.icons3{
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(19, 95, 154);
+    padding: 10px;
+}
+.icons4{
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(231, 63, 26);
+    padding: 10px;
+}
+.icons5{
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(67, 67, 194);
+    padding: 10px;
+}
+.para3{
+    background-color: black;
+    padding: 30px;
+}
+
+
 
  

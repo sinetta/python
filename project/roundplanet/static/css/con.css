@@ -22,7 +22,7 @@ a.a1{
 /* section2 */
 .logo{
     left:20em;
-    top:-18px;
+    top:25px;
     z-index: 100;
     position: absolute;
     background-color: white;

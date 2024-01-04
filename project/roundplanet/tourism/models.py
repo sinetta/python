@@ -19,6 +19,9 @@ class Event(models.Model):
     image=models.ImageField(upload_to='img')
     description=models.CharField(max_length=255)
 
+    def __str__(self):
+        return self.description
+
 class Gal(models.Model):
     image=models.CharField(max_length=3000)
 
@@ -39,4 +42,6 @@ class Subpackage(models.Model):
 class Event_news(models.Model):
     image=models.ImageField(upload_to='img')
     event=models.ForeignKey(Event,on_delete=models.CASCADE)
+
+
     
