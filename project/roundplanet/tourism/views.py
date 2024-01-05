@@ -91,5 +91,21 @@ def event(request,id):
     context['sp']=sp
     return render(request,'event.html',context)
 
-def subpack(request):
-    return render(request,'subpack1.html')
+def subpack(request,id):
+    context={}
+    sup=Subpack.objects.all().filter(pack=id)
+    
+    if request.method=='POST':
+        name=request.POST.get('name')
+        email=request.POST.get('email')
+        phone=request.POST.get('phone')
+        requirement=request.POST.get('requirement')
+        
+
+        if request.POST:
+            details=Contactus.objects.create(name=name,email=email,phone=phone,message=requirement)
+            details.save()
+            return redirect('packages')
+    context["sup"]=sup
+
+    return render(request,'subpack1.html',context)

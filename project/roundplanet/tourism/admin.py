@@ -23,6 +23,8 @@ class Sub(admin.ModelAdmin):
 class Event1(admin.ModelAdmin):
     list_display=['image','event']
 
+class Sup(admin.ModelAdmin):
+    list_display=['destination','day','night','price','description','destination1','destination2','destination3','desc1','desc2','desc3','image1','image2','image3','pack']
 
 admin.site.register(Contact,Enquiry)
 admin.site.register(Package,Pack)
@@ -31,3 +33,4 @@ admin.site.register(Gal,Gal_display)
 admin.site.register(Contactus,Contactus_display)
 admin.site.register(Subpackage,Sub)
 admin.site.register(Event_news,Event1)
+admin.site.register(Subpack,Sup)

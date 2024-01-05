@@ -196,7 +196,7 @@ a.l3:hover{
 
   /* section5 */
 
-  .footer{
+.footer{
     background-image: url(../images/background2.jpg);
     background-size: cover;
     height: 590px;

@@ -6,7 +6,9 @@ font-family: 'Playfair Display', serif;
 font-family: 'Playfair Display SC', serif;
 font-family: 'Roboto', sans-serif; */
 
-
+body{
+    overflow-x: hidden;
+}
 
 /* section1 */
 .r1{

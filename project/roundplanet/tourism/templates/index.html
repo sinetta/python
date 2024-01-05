@@ -14,7 +14,7 @@
 </head>
 <body>
 
-    {% block content %}
+   
     <!-- section1 -->
     <div class="container-fluid r1">
         <div class="row pt-2 pb-2">
@@ -126,37 +126,7 @@
   
  </div>
      
-    <!-- section6 -->
-    <div class="r4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg col-md col-sm c7" data-wow-delay= "0.5s">
-                     <img src="{% static 'images/happy-customers.png' %}" alt="" class="i4 mt-3">
-                        <span class="s1 ms-4 text-light">5000+
-                            <p class="para1">Happy Customers</p>
-                        </span>
-                </div>
-                <div class="col-lg col-md col-sm c8">
-                     <img src="{% static 'images/best-price.png' %}" alt="" class="i4 mt-3">
-                     <span class="s1 ms-4 text-light">Best Price
-                        <p class="para1">In Industry</p>
-                    </span>
-                </div>
-                <div class="col-lg col-md col-sm c8">
-                    <img src="{% static 'images/customer-service.png' %}" alt="" class="i4 mt-3">
-                    <span class="s1 ms-4 text-light">24x7
-                        <p class="para1">Customer Service</p>
-                    </span>
-                </div>
-                <div class="col-lg col-md col-sm c8">
-                    <img src="{% static 'images/bookings.png' %}" alt="" class="i4 mt-3">
-                    <span class="s1 ms-4 text-light">Hassle Free
-                        <p class="para1">Bookings</p>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
+   
     <!-- section7 -->
     <div class="d5">
         <div class="container">
@@ -178,7 +148,7 @@
                     </div>
                     <div class="row mt-5">
                         <div class="col-lg col-md col-sm">
-                        <a href="" class="l4">Read More</a>
+                        <a href="{% url 'about'%}" class="l4">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -333,7 +303,7 @@
     <!-- section10 -->
     <div class="container">
         <div class="row mt-5">
-            <div class="col-lg-4 col-md-4 col-sm-4 cthree text-center">
+            <div class="col-lg-4 col-md-12 col-sm-12 cthree text-center">
                 <h1 class="mt-5 text-light">Quick Inquiry</h1>
 
                 <form method="POST" class="">
@@ -364,12 +334,12 @@
                        
                 <h1 class="bot" >Exciting News <br> And upcoming Events</h1>
                 <div class="row pt-5 ms-3">
-                 
+                
                  <div class="col-lg-6 col-md-6 px-4">
                    <a class="one" href="">
                      <div class="row">
                        <div class="wrapper -2">
-                         <img src="{% static 'images/image1.jpg' %}" class=" w-100 overla mx-0" alt="..">
+                        <img src="{% static 'images/image1.jpg' %}" class=" w-100 overla mx-0" alt="..">
                          <div class="overlaying">
                            <i class="fa fa-link text " aria-hidden="true" style="font-size:30px;"></i>
                          
@@ -414,7 +384,7 @@
                     
                   </div>
                  
-                
+              
                 </div>
                
              </div>
@@ -430,11 +400,11 @@
                 <div class="col-lg-1 col-md-1 col-sm-1">
                    <img src="{% static 'images/icon1.png' %}" alt="" class="imageicon">
                 </div>
-                <div class="col-lg col-md col-sm mt-3 ms-3 text-light">
+                <div class="col-lg col-md-12 col-sm-12 mt-3 ms-3 text-light">
                     <h5>Download Our Informative Brochure</h5>
                     <p>Get all the details you need about our offerings in one convenient brochure.</p>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 mt-3">
+                <div class="col-lg-2 col-md-12 col-sm-12 mt-3">
                     <a href="" class="href1"><img src="{% static 'images/icon-download.png'%}" alt="" class="icon-download"><span class="ms-3 text-light">Download</span></a>
                 </div>
             </div>
@@ -496,7 +466,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    {% endblock %}
+   
 
     </body>
     </html>
