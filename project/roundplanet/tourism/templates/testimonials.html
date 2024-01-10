@@ -50,21 +50,21 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       
-                      <li>
-                        <a class="nav-link l2" aria-current="page" href="about">ABOUT US</a>
-                      </li>
-                      <li> 
-                        <a class="nav-link  ms-4" aria-current="page" href="packages">PACKAGES</a>
-                      </li>
-                      <li>
-                        <a class="nav-link l2 ms-4" aria-current="page" href="news">NEWS & EVENTS</a>
-                      </li>
-                      <li>
-                        <a class="nav-link l2 ms-4" aria-current="page" href="gallery">GALLERY</a>
-                      </li>
-                      <li>
-                        <a class="nav-link l3 ms-4" aria-current="page" href="contact">CONTACT US</a>
-                      </li>
+                        <li>
+                            <a class="nav-link l1" aria-current="page" href="{% url 'about' %}">ABOUT US</a>
+                          </li>
+                          <li> 
+                            <a class="nav-link l2 ms-4" aria-current="page" href="{% url 'packages' %}">PACKAGES</a>
+                          </li>
+                          <li>
+                            <a class="nav-link l2 ms-4" aria-current="page" href="{% url 'news' %}">NEWS & EVENTS</a>
+                          </li>
+                          <li>
+                            <a class="nav-link l2 ms-4" aria-current="page" href="{% url 'gallery' %}">GALLERY</a>
+                          </li>
+                          <li>
+                            <a class="nav-link l3 ms-4" aria-current="page" href="{% url 'contact' %}">CONTACT US</a>
+                          </li>
                     </ul>
                     
                   </div>
