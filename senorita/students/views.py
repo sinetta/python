@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('<h1>this is home page</h1>')
+    return HttpResponse('<h1>this is welcome page</h1>')
 def about(request):
     return HttpResponse('<h1>this is about page</h1>')
 def contact(request):
